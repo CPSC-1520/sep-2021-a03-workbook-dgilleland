@@ -1,6 +1,6 @@
-# CPSC-1520 - **Student Workbook** (Sep 2021)
+# CPSC-1520 - **Instructor Workbook** (Sep 2021)
 
-> **STUDENT_NAME** - Place your name in this line.
+> by **Dan Gilleland**
 
 This repository is your **Student Workbook** for participating in the in-class demos and for completing practice homework; the coding work is to be placed in the [*`src/`*](./src/ReadMe.md) folder. Learning Outcomes ([**LOGs**](./docs/logs/ReadMe.md)) and other useful notes can be found in the [**docs** folder](./docs), such as links to the [Reading Materials](./docs/Readings.md) for the course. Also, you are encouraged to use the [**docs/mynotes**](./docs/mynotes/ReadMe.md) folder to record your notes from each class.
 
