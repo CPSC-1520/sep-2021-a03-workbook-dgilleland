@@ -4,4 +4,8 @@
 
 ## Week 1 | Day 1
 
-TBD...
+Remember to write the complete `git commit` command with the message:
+
+```ps
+git commit -m "Some commit message"
+```
