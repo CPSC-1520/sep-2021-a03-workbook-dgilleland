@@ -9,6 +9,8 @@
 - [My Journal](./Journal.md)
 - [git Commands](./git-commands.md)
 - [Google - My Friend](https://google.ca)
+- [Markdown](./Markdown.md)
+- [git and VS Code](./git+VSCode.md)
 
 ----
 
