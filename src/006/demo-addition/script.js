@@ -2,6 +2,10 @@
 let first = prompt('Enter a number.');
 let second = prompt('Enter another number.');
 
+// ensure that I have a numeric data type
+first = parseFloat(first);
+second = parseFloat(second);
+
 let result = first + second;
 
 alert(`I calculated a result of ${result} when adding the numbers.`);
