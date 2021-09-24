@@ -13,6 +13,9 @@
 
 	Once complete, you should be able to replace all calls to document.querySelector() with query()
 */
+const query = function(selector) {
+	return document.querySelector(selector);
+}
 
 var disclosing;
 var receiving;
@@ -23,12 +26,12 @@ receiving = prompt('Enter receiving party name:');
 date = prompt('Enter the date [month, day, year]:');
 
 // update the disclosing party areas
-document.querySelector('.parties .disclosing-party').innerHTML = disclosing;
-document.querySelector('.disclosing-signature .disclosing-party').innerHTML = disclosing;
+query('.parties .disclosing-party').innerHTML = disclosing;
+query('.disclosing-signature .disclosing-party').innerHTML = disclosing;
 
 // update the receiving party areas
-document.querySelector('.parties .receiving-party').innerHTML = receiving;
-document.querySelector('.receiving-signature .receiving-party').innerHTML = receiving;
+query('.parties .receiving-party').innerHTML = receiving;
+query('.receiving-signature .receiving-party').innerHTML = receiving;
 
 // update the date
-document.querySelector('.date').innerHTML = date;
+query('.date').innerHTML = date;
