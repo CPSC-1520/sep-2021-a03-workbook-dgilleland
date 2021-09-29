@@ -10,6 +10,7 @@ const reportEvent = function(evt){ // opening curly brace before the "body" of t
     bubbles.innerHTML = evt.bubbles;
     tag.innerHTML = evt.target.tagName;
     type.innerHTML= evt.type;
+    console.log(evt.type + " on " + evt.target.tagName);
 } // closing curly brace denotes the end of the function
 
 document.querySelector('main') // find the first <main> element in the document
@@ -19,6 +20,19 @@ document.querySelector('main').addEventListener('mousedown', reportEvent);
 document.querySelector('main').addEventListener('mouseup', reportEvent);
 document.querySelector('main').addEventListener('click', reportEvent);
 document.querySelector('main').addEventListener('dblclick', reportEvent);
+document.querySelector('main').addEventListener('mousemove', reportEvent);
+document.querySelector('main').addEventListener('wheel', reportEvent);
 
 // Add an event listener for the dblclick event on the <header> element of this form
 document.querySelector('header').addEventListener('dblclick', reportEvent);
+
+const foolery = function(evt) {
+    let btn = evt.target;
+    btn.disabled = true;
+}
+document.querySelector('button').addEventListener('mouseover', foolery);
+document.querySelector('button').addEventListener('mouseout', function(evt) {
+    let btn = evt.target;
+    btn.removeAttribute('disabled');
+    console.log('snicker');
+})
