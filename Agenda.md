@@ -17,3 +17,9 @@
   - Default Event Behaviour (and canceling it)
   - Event Bubbling
 - Intro to If-Else
+
+## Oct 1
+
+- If-Else
+  - Demo-thumbnails
+  - Demo-debugging
