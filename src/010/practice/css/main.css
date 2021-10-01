@@ -41,4 +41,5 @@ cite {
 .pull-right {
 	float: right;
 	padding-left: 10px;
+	width: 200px;
 }
