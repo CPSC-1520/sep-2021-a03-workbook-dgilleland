@@ -20,6 +20,13 @@
 
 ## Oct 1
 
+- **010 Practice** - Solution
+- **Demo-debugging**
+  - Chrome Dev Tools - Sources Tab
+  - Breakpoints, Variable Values, and Stepping Through Code
+- **In-Class Assignment** - Event Listeners (60 min)
+
+## Oct 4
+
 - If-Else
   - Demo-thumbnails
-  - Demo-debugging
