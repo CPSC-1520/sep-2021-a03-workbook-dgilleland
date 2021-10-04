@@ -30,3 +30,8 @@
 
 - If-Else
   - Demo-thumbnails
+
+## Oct 6 & 8
+
+- Forms
+
