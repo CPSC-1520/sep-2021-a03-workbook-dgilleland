@@ -16,7 +16,7 @@ Declaring variables is all about creating an **identifier** (aka "variable name"
 
 ## Functions
 
-The three key things for **declaring** a function is that it requires the `function` keyword, a *parameter list*, and a *body* for the function. A **function declaration** is the set of instructions that are to executed when the function is called.
+The three key things for **declaring** a function is that it requires the `function` keyword, a *parameter list*, and a *body* for the function. A **function declaration** is the set of instructions that are to be executed when the function is called.
 
 ```js
 function (zero, or, more, variables, asParameters) {
