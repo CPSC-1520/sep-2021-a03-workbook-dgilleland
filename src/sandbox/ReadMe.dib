@@ -1,0 +1,23 @@
+#!markdown
+
+# Learn JavaScript with .NET Interactive
+
+You can create notebooks that include a mixture of markdown and HTML/JavaScript cells. For example, the next cell is a JavaScript cell of code.
+
+#!html
+
+<h1>Result below</h1>
+<output></output>
+
+#!javascript
+
+var total = 0;
+let max = 5;//Number(prompt('Enter a number greater than 0'));
+for(let count = 0; count < max; count++) {
+    total += count;
+}
+console.log('The total is', total);
+
+#!javascript
+
+document.querySelector('output').innerText = total;
