@@ -1,5 +1,6 @@
 # Agenda
 
+<!--
 ## Sep 27
 
 - Add/Remove Classes from Elements
@@ -41,4 +42,13 @@
 
 - Review Take-Home Lab
 - In-Class - If/Else
+
+-->
+
+## Oct 18
+
+- Lessons 040 and 050
+  - `gh pr list`, then `gh pr merge ##`, then `git pull`
+- Some extra [notes on understanding your JavaScript objects](./docs/mynotes/dom-objects.md)
+  - Exploring with your `$0.prototype.constructor.name`
 
