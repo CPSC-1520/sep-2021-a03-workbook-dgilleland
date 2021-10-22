@@ -59,7 +59,11 @@
 
 ## Oct 22
 
-- Loops/Arrays/Collections - Q & A
-- Lab 1 Solution
+- Modifying the Word Guessing Game
 - Slide-Show Practice
+
+## Oct 26
+
+- Lab 1 Solution
+- Slide-Show Practice Solution
 
