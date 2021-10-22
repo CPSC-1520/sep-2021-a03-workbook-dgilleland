@@ -62,7 +62,7 @@
 - Modifying the Word Guessing Game
 - Slide-Show Practice
 
-## Oct 26
+## Oct 25
 
 - Lab 1 Solution
 - Slide-Show Practice Solution

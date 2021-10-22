@@ -30,6 +30,24 @@ const fillGameboard = function() {
     document.querySelector('.gameboard').innerHTML = newGameboard;
 }
 
+// Determine if all of the letters have been guessed in the gameboard
+const isGameOver = function() {
+    // Check all of the <div> elements in the gameboard
+    let letterDivs = document.querySelectorAll('.gameboard div');
+    console.log(letterDivs);
+    // letterDivs is a NodeList, but I can still use it somewhat like an array
+    let allRevealed = true; // Start optimistically
+    //Loop through all the elements in the NodeList
+    for(let pos = 0; pos < letterDivs.length; pos++) {
+        // Check to see if the specific div in the NodeList is missing the .reveal class
+        let singleDiv = letterDivs[pos]; // use a variable to refer to the individual <div>
+        if(! singleDiv.classList.contains('reveal')) { // Note the ! - I'm wanting to see if it's MISSING
+            allRevealed = false;
+        }
+    }
+    return allRevealed; // the game is over if all the letters are revealed.
+}
+
 // Add an event handler for the textbox input.
 const guessWord = function(evt) {
     let out = document.getElementById('feedback');
@@ -64,6 +82,19 @@ const guessWord = function(evt) {
                 }
                 // Remove the guessed letter from the available letters
                 availableLetters = availableLetters.replace(letter, '');
+                // Check if the game is over, and give a message and start the next game
+                if(isGameOver()) {
+                    // Feedback message to the user
+                    out.innerText = "You Won!";
+                    out.classList.remove('wrong');
+                    out.classList.add('correct');
+                    if(confirm('Guess another word?')) {
+                        // reset the available letters
+                        availableLetters = LETTERS;
+                        // Start up another game
+                        fillGameboard();
+                    }
+                }
             } else {
                 // they already used up that letter
                 out.innerHTML = '<i>You already guessed that letter</i>';
