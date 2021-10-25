@@ -45,21 +45,33 @@ for (let idx = 0; idx < images.length; idx += 1) {
 }
 ```
 
+We should also set the first bullet as active.
+
+```js
+// highlight the first bullet as 'active'
+imageTracker.querySelectorAll('span')[0]
+            .classList.add('active');
+```
+
 In the event listener for the carousel, let's address the situation of the selector bullet being clicked by adding an `else` block.
 
 ```js
         } else {
             // selector bullet clicked
-            currentImg = target.dataset.idx;
+            currentImg = parseInt(target.dataset.idx);
         }
 ```
+
+> **Q)** Why do we need the `parseInt` function when setting the `currentImg`?
 
 Finally, in the same event listener for the carousel, we need to update the selection bullets to indicate which is the active bullet.
 
 ```js
         // update the active selector bullet
-        imageTracker.querySelector('span.active').classList.remove('active');
-        imageTracker.querySelectorAll('span')[currentImg].classList.add('active');
+        imageTracker.querySelector('span.active')
+                    .classList.remove('active');
+        imageTracker.querySelectorAll('span')[currentImg]
+                    .classList.add('active');
 ```
 
 > **Slide Show KeyDown** - There is an issue with the current implementation of the slideshow with clickable bullets. The issue can be reproduced by clicking the second bullet and then immediately clicking the .next button. Try to see what the cause of this issue is and think of how to solve it. <!-- currentImg = Number(target.dataset.idx); // required to prevent breakage! -->
@@ -98,7 +110,7 @@ document.addEventListener('keydown', function (evt) {
             click = new MouseEvent('click', {
                 'bubbles': true
             });
-            document.querySelector('.prev').dispatchEvent(click);
+            document.querySelector('.next').dispatchEvent(click);
             break;
     }
 });
