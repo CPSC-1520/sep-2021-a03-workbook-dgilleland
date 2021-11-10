@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Builder</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
+    <script src="main.js" defer></script>
+    <style>
+        #formContent {
+            background-color: cadetblue;
+            padding: 10px;
+            margin-top: 15px;
+        }
+        label {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Builder</h1>
+    <form id="builder">
+        <label>Label Text
+            <input type="text" name="labelText" autofocus />
+        </label>
+        <label>Control Name
+            <input type="text" name="controlName" />
+        </label>
+        <label>Control Type
+            <select name="controlType">
+                <option value="">[Select a type]</option>
+                <option>text</option>
+                <option>email</option>
+                <option>number</option>
+                <option>checkbox</option>
+                <option>radio</option>
+                <option>date</option>
+            </select>
+        </label>
+
+        <button type="submit">Add Control</button>
+        <button type="reset">Clear Fields</button>
+        <button type="button">Show HTML</button>
+    </form>
+
+    <!-- My Dynamic Form will appear below -->
+    <section id="formContent"></section>
+
+    <dialog id="rawHTML">
+        <button type="button">Close</button>
+        <pre></pre>
+    </dialog>
+</body>
+</html>
