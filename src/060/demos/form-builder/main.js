@@ -38,14 +38,28 @@
     const showDialog = function(evt) {
         // "open" the dialog for the user to see the generated HTML
         let htmlText = formContent.innerHTML;
-        let myPre = rawHTML.querySelector('pre');
-        myPre.innerText = htmlText;
-        rawHTML.setAttribute('open', '');
+        if(htmlText !== '') {
+            // see Credits #1
+            let options = {
+                //"wrap-attributes": "force-aligned",
+                "inline": []
+            }
+            htmlText = html_beautify(htmlText, options);
+
+            let myPre = rawHTML.querySelector('pre code');
+            myPre.innerText = htmlText;
+            // see Credits #2
+            Prism.highlightAll();
+
+            rawHTML.setAttribute('open', '');
+        } else {
+            alert('Please build a form before attempting to show the resulting HTML');
+        }
         console.log('open dialog box');
     }
     const closeDialog = function(evt) {
         // "close" the dialog on the page (and clear the contents of the <pre> tag)
-        rawHTML.querySelector('pre').innerText = '';
+        rawHTML.querySelector('pre code').innerText = '';
         rawHTML.removeAttribute('open');
         console.log('close dialog box');
     }
