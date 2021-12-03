@@ -1,0 +1,29 @@
+[
+    {
+        "Name": "Elastigirl",
+        "Alias": "Helen Parr",
+        "Photo": "Elastigirl.png",
+        "Superpowers": [
+            "Full-Body Elasticity",
+            "Shapeshifting"
+        ]
+    },
+    {
+        "Name": "Mr. Incredible",
+        "Alias": "Robert Parr",
+        "Photo": "Mr.Incredible.png",
+        "Superpowers": [
+            "Superhuman strength",
+            "Near invulnerability",
+            "Enhanced senses"
+        ]
+    },
+    {
+        "Name": "Frozone",
+        "Alias": "Lucius Best",
+        "Photo": "Frozone.png",
+        "Superpowers": [
+            "Ice/Snow Projection"
+        ]
+    }
+]

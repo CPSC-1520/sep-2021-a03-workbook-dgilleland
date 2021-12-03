@@ -28,4 +28,10 @@ let heroData = {}; // start with an empty object
         textHolder.innerText = JSON.stringify(heroData, null, 2);
     }
     showHeros.addEventListener('click', showData);
+    
+    // An Arrow function
+    const clearTextHolder = (evt) => {
+        textHolder.innerText = '';
+    }
+    textHolder.addEventListener('click', clearTextHolder);
 })();

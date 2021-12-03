@@ -5,11 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/holiday.css@0.9.8" />
+    <script src="./main.js" defer></script>
+    <script src="./supers.js" defer></script>
 </head>
 <body>
     <h1><sup>(almost)</sup> All About JSON</h1>
     <button id="showHeros">Show Heros</button>
-    <pre id="textHolder"></pre>
+    <pre id="textHolder" title="Click to Clear"></pre>
+    <button id="loadSupers">Load Supers</button>
+    <section id="displaySupers" title="Click to Clear"></section>
+
+    <template id="errors">
+        <div>
+            <h3></h3>
+            <pre></pre>
+        </div>
+    </template>
+
+    <template id="supe">
+        <div style="border: solid green 1px; margin:10px; padding: 5px;">
+            <img src="" alt="" style="float:right; height: 100px;">
+            <h2></h2>
+            <blockquote></blockquote>
+            <ul></ul>
+        </div>
+    </template>
 </body>
 </html>
