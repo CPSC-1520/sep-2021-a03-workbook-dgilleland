@@ -27,9 +27,18 @@
         <div style="border: solid green 1px; margin:10px; padding: 5px;">
             <img src="" alt="" style="float:right; height: 100px;">
             <h2></h2>
-            <blockquote></blockquote>
             <ul></ul>
+            <blockquote></blockquote>
         </div>
     </template>
+    <style>
+        blockquote::before {
+            content: 'Alias:';
+            font-weight: bold;
+        }
+        blockquote {
+            font-style: italic;
+        }
+    </style>
 </body>
 </html>

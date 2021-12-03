@@ -58,6 +58,6 @@
 
     loadSupers.addEventListener('click', handleLoadSupers);
     displaySupers.addEventListener('click', evt => {
-        displaySupers.replaceChildren();
+        displaySupers.replaceChildren(); // Replace with nothing
     })
 })();
